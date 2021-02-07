@@ -1,0 +1,105 @@
+
+@media (max-width: 900px) {
+
+    body {
+        color: #505458;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .photo {
+        position: relative;
+        background: url(./images/drawers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: top;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        z-index: 0;
+    }
+
+    .content__right {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        bottom: -100px;
+        border-bottom-left-radius: 15px; 
+        border-bottom-right-radius: 15px; 
+        border-top-right-radius: 0;
+        z-index: 1;
+    }
+
+    .social-menu-open {
+        display:flex;
+        background-color: var(--clr-primary-1);
+        margin: 0 15px;
+        position: absolute; 
+        width: 100%;
+        bottom: 0;
+        left: -15px;
+        align-items: center;
+        padding: 30px 30px;
+        font-size: x-small;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 2;
+    }
+    
+    
+    .close-social-menu {
+        display: none;
+     }
+
+     .profil {
+        align-items: center;
+        display: flex;
+        padding: 10px 0;
+        background-color: #ffffff;  
+    
+    }
+
+    .icon__menu {
+        margin-top: 40px;
+        margin-left: 120px;
+        margin-bottom: 30px;
+        z-index: 3;
+        height: auto;
+        width: 3vw;
+    }
+
+    .social-menu-open img {
+        margin: 8px 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    body {
+        min-width: 375px;
+    }
+
+    .icon__menu {
+        margin-top: 30px;
+        margin-left: 90px;
+        margin-bottom: 20px;
+        z-index: 3;
+        height: auto;
+        width: 5vw;
+    }
+}
